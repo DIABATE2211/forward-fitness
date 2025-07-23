@@ -167,6 +167,7 @@ main{
         clear: left;
         border-top: 1px solid #000;
         border-bottom: 1px solid #000;
+        background: linear-gradient(to right, #ccc, #fff);
         background-color: #f2f2f2;
         padding: 1% 2%;
     }
@@ -220,6 +221,11 @@ main{
     
     nav li a{
         padding: 0.5em 1em;
+    }
+    
+    nav li a:hover{
+        color: #000;
+        background-color: #fff;
     }
     
     /* Desktop Viewport: Style Rules for main content */
