@@ -5,7 +5,7 @@
  */
 
 /*css reset*/
-body,header,nav,main,footer,h1,div,img,ul{
+body,header,nav,main,footer,h1,div,img,ul,figure,figcaption,section,article,aside{
     margin: 0;
     padding: 0;
     border: 0;
@@ -21,12 +21,16 @@ img{
     display: block;
 }
 
+/* style rule for box sizing applies to all element */
+
+*{
+    box-sizing:border-box;
+}
+
 /*style rules for mobile viewport*/
 
 /*style rules for header*/
 header{
-    position: -webkit-sticky;
-    position: sticky;
     top: 0;
     background-color: #000;
     height: 190px;
@@ -82,6 +86,30 @@ main{
     font-family: 'roboto slab', serif;
 }
 
+.mobile h3{
+    text-shadow:5px 5px 8px #ccc;
+}
+
+article{
+    padding: 2%;
+}
+
+article h3{
+    text-align: center;
+}
+
+article img{
+    margin: 0 auto;
+}
+
+article ul{
+    margin-left: 10%;
+}
+
+article:nth-of-type(2){
+    background-color: rgba(204, 204, 204, 0.3);
+}
+
 .tel-link{
     background-color: #404040;
     padding: 2%;
@@ -105,6 +133,26 @@ main{
 .action{
     font-size: 1.35em;
     color: #666600;
+    font-weight: bold;
+    text-shadow:5px 5px 8px #ccc;
+}
+
+.frame{
+    position: relative;
+    max-width: 450px;
+    margin: 2% auto;
+}
+
+.pic-text{
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-family: verdana, Arial, sans-serif;
+    font-size: 1.4em;
     font-weight: bold;
 }
 
@@ -138,7 +186,6 @@ main{
     /*Tablet Viewport: Show tablet-desktop class, hide mobile class */
     
     header{
-        position: static;
         padding-bottom: 2%;
     }
     
@@ -161,6 +208,33 @@ main{
     
     main ul{
         margin: 0 0 4% 10%;
+    }
+    
+    .grid{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+    }
+    
+    .pic-text{
+        font-size: 1em;
+        padding: 10px;
+    }
+    
+    aside{
+        text-align: center;
+        font-size: 1.25em;
+        font-style: italic;
+        font-weight: bold;
+        padding: 2%;
+        background-color: rgba(204, 204, 204, 0.5);
+        box-shadow: 5px 5px 8px #000;
+        text-shadow: 5px 5px 5px #b3b3b3;
+        border-radius: 0 15px;
+    }
+    
+    .grid-item4 {
+        grid-column: 1 / span 3;
     }
     
     #exercises{
@@ -187,6 +261,36 @@ main{
     .map{
         width: 600px;
         height: 450px; 
+    }
+    
+    /*Tablet Viewport: Style Rules For table*/
+    
+    table{
+        border: 1px solid #000;
+        border-collapse: collapse;
+        margin: 0 auto;
+        width:100%;      
+    }
+    
+    caption{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1%;
+    }
+    
+    th, td{
+        border: 1px solid #000;
+        padding: 2%;
+    }
+    
+    th{
+        background-color: #000;
+        color:#fff;
+        font-size: 1.15em;
+    }
+    
+    tr:nth-child(odd){
+        background-color: #ccc;
     }
 }
 
@@ -237,6 +341,24 @@ main{
         font-size: 1.8em;
     }
     
+    article h3{
+    font-size: 1.75em;
+    }
+    
+    .pic-text{
+        font-size: 1.5em;
+        padding: 20px;
+    }
+    
+    .frame{
+        opacity: 0.9;
+    }
+    
+    .frame:hover{
+        opacity: 1;
+        box-shadow: 8px 8px 10px #808080;
+    }
+    
     #weight, #cardio, #training{
         width: 29%;
         float: left;
@@ -257,6 +379,9 @@ main{
         margin: 0 auto;
     }
     
+    table{
+        width: 80%;
+    }
 }
 
 /* Media Query for print */
