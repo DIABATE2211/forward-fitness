@@ -5,7 +5,7 @@
  */
 
 /*css reset*/
-body,header,nav,main,footer,h1,div,img,ul,figure,figcaption,section,article,aside{
+body,header,nav,main,footer,h1,div,img,ul,figure,figcaption,section,article,aside,audio,video{
     margin: 0;
     padding: 0;
     border: 0;
@@ -16,7 +16,7 @@ body{
     background-color: #000;
 }
 
-img{
+img,video{
     max-width: 100%;
     display: block;
 }
@@ -73,7 +73,7 @@ nav li a{
     display: block;
 }
 
-.tablet-desktop{
+.tablet-desktop,.desktop{
     display: none;
 }
 
@@ -84,6 +84,10 @@ main{
     padding: 2%;
     font-size: 1.15em;
     font-family: 'roboto slab', serif;
+}
+
+video{
+    margin: 0 auto 4%;
 }
 
 .mobile h3{
@@ -214,7 +218,7 @@ form #submit {
     
     /*Tablet Viewport: Show tablet-desktop class, hide mobile class */
     
-    .tablet-desktop{
+    .tablet-desktop,.desktop{
         display: block;
     }
     .mobile{
