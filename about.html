@@ -29,16 +29,42 @@
 
         <!--cette division seras necessaire pour appliquer du css plutard😊-->
         <div id="container">
+        
+            
+            <!-- Mobile Nav -->
+            <nav class="mobile-nav">
+               
+                <div id="menu-links">
+                   
+                    <a href="index.html">Home</a>
+                    
+                    <a href="about.html">About Us</a>
+                    
+                    <a href="classes.html">Classes</a>
+                    
+                    <a href="nutrition.html">Nutrition</a>
+                    
+                    <a href="contact.html">Contact Us</a>
+                    
+                </div>
+                <a class="menu-icon" onclick="hamburger()">
+                   
+                    <div>&#9776;</div>
+                    
+                </a>
+                
+            </nav>
 
             <!--use the header area for the website name or logo--> 
-            <header>
+            <header id="ffc-logo">
 
                 <a href="index.html"><img src="images/forward-fitness-logo.png" alt="Forward Fitness Club Logo"></a>
 
             </header>
 
             <!--use the nav area to add hyperlink to other pages within website-->
-            <nav>
+            <!--tablet, Desktop Nav -->
+            <nav class="tablet-desktop">
 
                 <ul><!--<p> avant-->
                     <li><a href="index.html">Home</a></li>
@@ -140,14 +166,22 @@
                         <dl><!--definition list-->
                            
                             <dt>Burpee</dt><!--definition term-->
-                            <dd>Burpees are a great full-body exercice to increase your strengh and endurance.Begin in a standing position, drop into a squat and extend your hands forward, kick your feet back and then forward again quickly and them jump up from a squatted position.</dd><!--definition description-->
+                            <dd>Burpees are a great full-body exercice to increase your strengh and endurance.Begin in a standing position, drop into a squat and extend your hands forward, kick your feet back and then forward again quickly and them jump up from a squatted position.<span class="viewex" onclick="burpees()"> View Example.</span></dd><!--definition description-->
                             
                             <dt>Plank</dt>
-                            <dd>Plank build your core strenght.To perform a plank, get in a push-up position and rest your forearms on the floor.Hold the position as long as you can.</dd>
+                            <dd>Plank build your core strenght.To perform a plank, get in a push-up position and rest your forearms on the floor.Hold the position as long as you can.<span class="viewex" onclick="plank()"> View Example.</span></dd>
                             
                             <dt>Montain Climber</dt>
-                            <dd>Mountain climber are a good cardio exercice.Place your hands on the floor in push-up position,bring one knee up to your chest, and then switch as quickly as you can (as though you are climbing a mountain).</dd>
+                            <dd>Mountain climber are a good cardio exercice.Place your hands on the floor in push-up position,bring one knee up to your chest, and then switch as quickly as you can (as though you are climbing a mountain).<span class="viewex" onclick="mountain()"> View Example.</span></dd>
                         </dl>
+                        
+                        <video controls id="example">
+                            <source id="vid-src" src="vid" type="video/mp4">
+                            <track id="despsrc" src="des" kinf="descriptions" srclang="en" label="English Descriptions">
+                            <p>Your browser does not support the video element.</p>
+                        </video>
+                        
+                        
                         
                         <p>For more information about how to stay active, visit the <a class="external-link" href="https://www.hhs.gov/" target="_blank">U.S. Department of Health and Human services</a></p><!--anchor target="_blank" est pour ouvrire le lien dans un nouvel ongle de façon automatique-->
 
@@ -165,6 +199,8 @@
             </footer>
         
         </div>
+        
+        <script src="scripts/script.js"></script>
 
     </body>
 
