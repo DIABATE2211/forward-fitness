@@ -30,9 +30,31 @@
 
         <!--cette division seras necessaire pour appliquer du css plutard😊-->
         <div id="container">
-
+            
+          <nav class="mobile-nav">
+               
+                <div id="menu-links">
+                   
+                    <a href="index.html">Home</a>
+                    
+                    <a href="about.html">About Us</a>
+                    
+                    <a href="classes.html">Classes</a>
+                    
+                    <a href="nutrition.html">Nutrition</a>
+                    
+                    <a href="contact.html">Contact Us</a>
+                    
+                </div>
+                <a class="menu-icon" onclick="hamburger()">
+                   
+                    <div>&#9776;</div>
+                    
+                </a>
+                
+            </nav>
             <!--use the header area for the website name or logo--> 
-            <header>
+            <header id="ffc-logo">
 
                 <!--le heading a ete supprimer-->
 
@@ -41,7 +63,8 @@
             </header>
 
             <!--use the nav area to add hyperlink to other pages within website-->
-            <nav>
+            <!--tablet, Desktop Nav -->
+            <nav class="tablet-desktop">
 
                 <ul><!--<p> avant-->
                     <li><a href="index.html">Home</a></li>
@@ -145,6 +168,8 @@
             </footer>
             
         </div>
+        
+        <script src="scripts/script.js"></script>
 
     </body>
 
