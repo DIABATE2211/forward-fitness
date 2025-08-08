@@ -1,5 +1,5 @@
-http://www.exampledomain.com/index.html
-http://www.exampledomain.com/about.html
-http://www.exampledomain.com/classes.html
-http://www.exampledomain.com /nutrition.html
-http://www.exampledomain.com /contact.html
+https://diabate2211.github.io/forward-fitness/index.html
+https://diabate2211.github.io/forward-fitness/about.html
+https://diabate2211.github.io/forward-fitness/classes.html
+https://diabate2211.github.io/forward-fitness/nutrition.html
+https://diabate2211.github.io/forward-fitness/contact.html
