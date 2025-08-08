@@ -1,22 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Test WhatsApp</title>
+</head>
+<body>
+
 <form id="myForm">
   <label for="fName">Prénom :</label>
   <input type="text" id="fName" name="fName" required>
-
   <button type="button" onclick="sendWhatsApp()">Contacter sur WhatsApp</button>
 </form>
 
 <script>
 function sendWhatsApp() {
-  const fName = document.getElementById('fName').value;
-  const phone = '225779134185'; // ton numéro sans + ni 0
+  const fName = document.getElementById('fName').value.trim();
+  if(!fName) {
+    alert("Merci de renseigner votre prénom");
+    return;
+  }
+  const phone = '225779134185'; // numéro ivoirien sans + ni 0
   const message = encodeURIComponent(`Bonjour, je m'appelle ${fName} et je souhaite avoir plus d'informations.`);
   const url = `https://wa.me/${phone}?text=${message}`;
-  window.open(url, '_blank'); // ouvre WhatsApp dans un nouvel onglet
+  window.open(url, '_blank');
 }
 </script>
 
-
-
-
-
-
+</body>
+</html>
