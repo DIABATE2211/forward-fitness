@@ -8,12 +8,13 @@
 <script>
 function sendWhatsApp() {
   const fName = document.getElementById('fName').value;
-  const phone = '255779134185'; // ton numéro sans + ni 0
+  const phone = '255779134184'; // ton numéro sans + ni 0
   const message = encodeURIComponent(`Bonjour, je m'appelle ${fName} et je souhaite avoir plus d'informations.`);
   const url = `https://wa.me/${phone}?text=${message}`;
   window.open(url, '_blank'); // ouvre WhatsApp dans un nouvel onglet
 }
 </script>
+
 
 
 
